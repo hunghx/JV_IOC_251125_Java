@@ -40,6 +40,6 @@ public class InputOutput {
         System.out.println("❤🧡💛💚💙💜🤎🖤🤍");
         // in mau : mau ANSI
         System.out.printf("%sHello, đay la mau do", RED);
-
+        sc.close(); // tránh rò rỉ vùng nhớ
     }
 }

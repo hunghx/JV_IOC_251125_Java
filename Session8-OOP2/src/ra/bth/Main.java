@@ -9,7 +9,7 @@ public class Main {
 
     public static void run(){
         Scanner sc = new Scanner(System.in);
-        StudentManager manager = new StudentManager();
+//        StudentManager manager = new StudentManager();
         while (true){
             System.out.println("----- Quản Lý Sinh Viên -----");
             System.out.println("""
@@ -25,19 +25,19 @@ public class Main {
             switch (choice){
                 case   1:
                     System.out.println("Hiển thị danh sách sinh viên");
-                    manager.showListStudent();
+                    StudentManager.showListStudent();
                     break;
                 case   2:
                     System.out.println("Thêm mới 1 sinh viên");
-                    manager.addStudent();
+                    StudentManager.addStudent(sc);
                     break;
                 case   3:
                     System.out.println("Chỉnh sửa thông tin sinh viên");
-                    manager.updateStudent();
+                    StudentManager.updateStudent();
                     break;
                 case   4:
                     System.out.println("Xóa sinh viên");
-                    manager.deleteStudent();
+                    StudentManager.removeStudent();
                     break;
                 case   5:
                     System.out.println("Thoát chương trình");
@@ -49,3 +49,4 @@ public class Main {
         }
     }
 }
+
